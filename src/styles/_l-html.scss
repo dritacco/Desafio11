@@ -1,0 +1,11 @@
+@use '../styles/h-colors' as C;
+
+html {
+
+    background-image: url("../../public/images/background.jpg");
+   
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}

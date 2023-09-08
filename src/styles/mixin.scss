@@ -1,0 +1,25 @@
+// Declaraciones globales
+
+// Display
+@mixin Display ( $display, $flexFlow, $justifyContent, $alignItems, $gap : false) {
+    display: $display;
+    flex-flow: $flexFlow;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    @if $gap {
+        gap: $gap;
+    };
+}
+
+// Botones
+@mixin Button ( $fontSize, $fontWeight, $color, $backgroundColor, $borderRadius, $boxShadow, $padding : false ) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    background-color: $backgroundColor;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    @if $padding{
+        padding: $padding;
+    };
+}

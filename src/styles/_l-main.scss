@@ -1,0 +1,71 @@
+//use color
+@use '../styles/h-colors' as C;
+
+
+.Main {    
+        
+    .calc {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: C.$calculator-color;
+        color: white;
+        width: 350px;
+        max-width: 100%;
+        padding: 1.5rem;
+
+        gap: .5rem;
+
+    }
+
+    .icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .display {
+        grid-column: 1 / -1;
+        background-color: C.$display-color;
+        padding: 1.5rem;
+        font-size: 2rem;
+        text-align: right;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .button {
+        background-color: C.$operator-color;
+        color: C.$number-color;
+        border: 0;
+        padding: 1.5rem .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: C.$hover-operator;
+    }
+
+    #c {
+        grid-column: span 2;
+    }
+    
+    #equal {
+        color: C.$equal-textColor;
+        grid-column: span 2;
+        background-color: C.$equal-color;
+    }
+    
+    #equal:hover {
+        background-color: C.$hover-equal;
+    }
+
+
+}
